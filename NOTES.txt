@@ -1,0 +1,4 @@
+Launch script on boot:
+https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all
+
+systemd method
