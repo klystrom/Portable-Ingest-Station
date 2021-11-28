@@ -21,7 +21,7 @@ GPIO.setup(LED3_output, GPIO.OUT)
 GPIO.setup(LED4_output, GPIO.OUT)
 GPIO.setup(buzzer_output, GPIO.OUT)
 
-def gpio_owncloud_sync_led(arg_state):
+def gpio_nextcloud_sync_led(arg_state):
     if True == arg_state:
         GPIO.output(LED3_output, GPIO.HIGH)
     else:
@@ -54,14 +54,14 @@ def gpio_start_indication():
 def gpio_reset_all():
     GPIO.output(LED1_output, GPIO.LOW)
     GPIO.output(LED2_output, GPIO.LOW)
-    #GPIO.output(LED3_output, GPIO.LOW) #Do not set this to low as it's used by owncloud sync checker app
+    #GPIO.output(LED3_output, GPIO.LOW) #Do not set this to low as it's used by nextcloud sync checker app
     GPIO.output(LED4_output, GPIO.LOW)
     GPIO.output(buzzer_output, GPIO.LOW)
 
 def gpio_set_all():
     GPIO.output(LED1_output, GPIO.HIGH)
     GPIO.output(LED2_output, GPIO.HIGH)
-    #GPIO.output(LED3_output, GPIO.HIGH) #Do not set this to low as it's used by owncloud sync checker app
+    #GPIO.output(LED3_output, GPIO.HIGH) #Do not set this to low as it's used by nextcloud sync checker app
     GPIO.output(LED4_output, GPIO.HIGH)
     GPIO.output(buzzer_output, GPIO.HIGH)
 
