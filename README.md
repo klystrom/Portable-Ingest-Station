@@ -27,7 +27,7 @@ It aims to do the following:
   <li>Micro SD card (for Raspberry Pi OS)</li>
   <li>SD Card reader</li>
   <li>Local storage device (In my case it's an SSD in a USB to SATA enclosure)</li>
-  <li>[RPI GPIO Board](https://github.com/klystrom/Portable-Ingest-Station/tree/main/hardware)</li>
+  <li>RPI GPIO Board</li>
 </ol>
 
 # Installation
@@ -68,8 +68,8 @@ Guide to install it is [here](https://help.nextcloud.com/t/nextcloud-client-for-
 Your SD card might have different folder structure than mine (mine is based on Fuji X-T2 SD Card) and your might want the files to be saved to a specific directory in the local storage as well. For that, edit the path in these two files:
 
 <ol>
-  <li>[util_find_card_and_drives.py](https://github.com/klystrom/Portable-Ingest-Station/blob/main/util_find_card_and_drives.py)</li>
-  <li>[util_sync_folders.py](https://github.com/klystrom/Portable-Ingest-Station/blob/main/util_sync_folders.py)</li>
+  <li>util_find_card_and_drives.py</li>
+  <li>util_sync_folders.py</li>
 </ol>
 
 Now is the most convenient time to test it out. As after this, you would need to reboot the Raspberry Pi in order to test after every change. So put on the GPIO board and test to make sure it works before proceeding to the next step.
