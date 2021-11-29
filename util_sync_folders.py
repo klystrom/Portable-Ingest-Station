@@ -3,8 +3,8 @@ import subprocess
 import pathlib
 import glob
 
-def copy_from_sd_to_ssd():
-    result = subprocess.call("rsync -aP /media/pi/disk/DCIM/*_FUJI/ /media/pi/SSD/SYNC_TARGET/ ", shell=True)
+def copy_from_sd_to_ssd(arg_sd_path, arg_local_storage_path):
+    result = subprocess.call("rsync -aP " + arg_sd_path + " " + arg_local_storage_path, shell=True)
 
     print("Rsync result: " + str(result))
 
@@ -13,10 +13,10 @@ def copy_from_sd_to_ssd():
     else:
         return False
 
-def check_nextcloud_sync_complete():
-    fileDir = '/media/pi/SSD/SYNC_TARGET/'
+def check_nextcloud_sync_complete(arg_local_storage_path):
+    #fileDir = '/media/pi/SSD/SYNC_TARGET/'
     fileExt = r"*.db-wal"
-    file_list = list(pathlib.Path(fileDir).glob(fileExt))
+    file_list = list(pathlib.Path(arg_local_storage_path).glob(fileExt))
 
     print(file_list)
     local_result = os.path.getsize(str(file_list[0]))

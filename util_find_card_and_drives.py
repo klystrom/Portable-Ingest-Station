@@ -1,10 +1,8 @@
 import os
 import subprocess
 
-PATH_FUJI_SD_CARD = '/media/pi/32 GB Volume/DCIM/'
-
-def check_sd_card():
-    result_sd = subprocess.call("mount | /media/pi/disk", shell=True)
+def check_sd_card(arg_path):
+    result_sd = subprocess.call("mount | " + arg_path, shell=True)
 
     print ("mount = " + str(result_sd))
 
@@ -13,8 +11,8 @@ def check_sd_card():
     else:
         return False
 
-def check_ssd():
-    result_ssd = subprocess.call("mount | /media/pi/SSD", shell=True)
+def check_ssd(arg_path):
+    result_ssd = subprocess.call("mount | " + arg_path, shell=True)
 
     print ("mount = " + str(result_ssd))
 

@@ -64,13 +64,18 @@ This is the part where it gets abit sketchy. Since the the support for official 
 
 Guide to install it is [here](https://help.nextcloud.com/t/nextcloud-client-for-raspberry-pi/27989/62). Be sure to follow along the troubleshooting steps mentioned in the thread.
 
-## Step 6: Test Run
-Your SD card might have different folder structure than mine (mine is based on Fuji X-T2 SD Card) and your might want the files to be saved to a specific directory in the local storage as well. For that, edit the path in these two files:
+## Step 6: Configure
+Plug in your SD card and storage, they should automount under Raspberry Pi OS.
 
-<ol>
-  <li>util_find_card_and_drives.py</li>
-  <li>util_sync_folders.py</li>
-</ol>
+Find out where they are mounted and edit app_nextcloud_sync_check.py.
+
+> **Note:** You can use either of the following commands to find the mountpoints. Look for the keyword "/media/"
+>
+> df -h
+>
+> sudo cat /proc/mounts
+
+Your SD card might have different folder structure than mine (mine is based on Fujifilm X-T2 SD Card) and you might want the files to be saved to a specific directory in the local storage. For that, edit the path in these app_nextcloud_sync_check.py.
 
 Now is the most convenient time to test it out. As after this, you would need to reboot the Raspberry Pi in order to test after every change. So put on the GPIO board and test to make sure it works before proceeding to the next step.
 
