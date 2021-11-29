@@ -1,7 +1,5 @@
 import os
 import time
-import atexit
-import RPi.GPIO as GPIO
 from util_sync_folders import *
 from util_find_card_and_drives import *
 from util_gpio_handler import *
