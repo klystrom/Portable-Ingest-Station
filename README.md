@@ -31,6 +31,9 @@ It aims to do the following:
 </ol>
 
 # Installation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a_C9UawHIGE?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Step 1: Prepare Raspberry Pi OS
 You will need the latest version of [Raspberry Pi OS](https://www.raspberrypi.com/software/). Methods of getting the OS onto the SD card will not be covered here as there are many resources online that covers this. The easiest way is to use the Raspberry Pi Imager.
 
