@@ -32,7 +32,8 @@ It aims to do the following:
 
 # Installation
 
-<div align="center">
+## YouTube Video:
+<div align="left">
   <a href="https://www.youtube.com/watch?v=a_C9UawHIGE"><img src="https://img.youtube.com/vi/a_C9UawHIGE/0.jpg" alt="Portable Ingest Station Software Setup"></a>
 </div>
 
